@@ -1,0 +1,82 @@
+<html>
+	<head>
+		<title>CupCakes</title>
+		<link rel="stylesheet" href="css/cupcake.css"/>
+		
+		<script>
+			
+			
+			// register the load event handler for the window object
+			// to ensure that all content is loaded and ready to be
+			// processed / handled / manipulated by JS
+			// see 3 different ways to achieve it
+
+			// option 1
+			// window.onload = init;
+			
+			// option 2
+			window.addEventListener("load", function () {
+				var allphotos = document.getElementsByClassName("photo");
+				for(var ph = 0; ph < allphotos.length; ph++) {
+					allphotos[ph].style.display = "none";
+					
+				}
+				var allcaptions = document.getElementsByClassName("caption");
+				for(var c = 0; c < allcaptions.length; c++) {
+					allcaptions[c].addEventListener("click", togglevisibility);
+				}
+			});
+				
+			
+			function togglevisibility() {
+				//window.alert(this.innerHTML);
+				//var thePhoto = this.parentNode.getElementsByClassName("photo")[0];
+				//debugger;
+				thePhoto = this.nextElementSibling;
+				//alert(thePhoto.innerHTML);
+				if (thePhoto.style.display == "none") {
+					thePhoto.style.display = "block";
+				} else {
+					thePhoto.style.display = "none";
+				}	
+			}
+			
+			// option 3
+			// coded in the HTML body element
+			// <body onload='init();'>
+			
+		</script>
+	</head>
+	<body>
+		<h1>cupcakes</h1>
+		
+		<div class="container">
+			<div class="caption">
+				<h2>Monster CupCake</h2>
+			</div>
+
+			<div class="photo">
+				<img src="images/cookie-monster-cupcake.jpg">
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="caption">
+				<h2>Chocolate CupCake</h2>
+			</div>
+			<div class="photo">
+				<img src="images/Chocolate_cupcakes.jpg">
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="caption">
+				<h2>Baby CupCake</h2>
+			</div>
+			<div class="photo">
+				<img src="images/baby-cute-cupcake.jpg">
+			</div>
+		</div>
+
+	</body>	
+</html>

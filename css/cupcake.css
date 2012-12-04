@@ -1,0 +1,35 @@
+body {
+	background-color:yellow;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+h1 {
+	font-size:60px;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+div {
+	border-style:dotted;
+	border-width: 1px;
+	border-color:black;
+}
+
+div.container {
+	width:600px;
+	margin:auto;
+	margin-top:20px;
+	margin-bottom: 20px;
+}
+
+div.caption {
+	text-align:center;
+	background-color:red;
+	border-radius:20px;
+	
+}
+
+div.photo {
+	text-align:center;
+	background-color:white;
+}

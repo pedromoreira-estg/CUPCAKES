@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>CupCakes</title>
+		<link rel="stylesheet" href="css/cupcake.css"/>
+		<script type="text/javascript" src="jquery/jquery-1.8.2.min.js"></script>
+		<!--script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script!-->
+		<script>
+			$(document).ready( function () {
+				$("div.container div.photo").hide();
+				$("div.container div.caption").click( function () {
+					$(this).parent().children("div.photo").toggle();
+				});
+			});
+			
+			
+		</script>
+	</head>
+	<body>
+		<h1>cupcakes</h1>
+		
+		<div class="container">
+			<div class="caption">
+				<h2>Monster CupCake</h2>
+			</div>
+			<div class="photo">
+				<img src="images/cookie-monster-cupcake.jpg">
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="caption">
+				<h2>Chocalte CupCake</h2>
+			</div>
+			<div class="photo">
+				<img src="images/Chocolate_cupcakes.jpg">
+			</div>
+		</div>
+
+		<div class="container">
+			<div class="caption">
+				<h2>Baby CupCake</h2>
+			</div>
+			<div class="photo">
+				<img src="images/baby-cute-cupcake.jpg">
+			</div>
+		</div>
+
+	</body>	
+</html>
